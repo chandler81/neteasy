@@ -8,6 +8,8 @@ asa_ip = '10.2.40.4'
 sw_ip = '10.2.5.1'
 usename = input("Please enter your login account: ")
 password = input("Please enter your login password: ")
+server_ip = input("Please enter the server IP address: ")
+server_port = input("Please enter the port number: ")
 
 #ports = []
 
