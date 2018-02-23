@@ -42,7 +42,7 @@ if not verify_port or not int(server_port) < 65536:
 
 def get_asa_port(_ip_):
     asa_connect = pexpect.spawnu('ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 '+ usename + '@' + (_ip_))
-    asa_connect.logfile = sys.stdout
+    #asa_connect.logfile = sys.stdout
     asa_1st_login = asa_connect.expect(['(yes/no)', 'password:'])
     if asa_1st_login == 0:
         asa_connect.sendline('yes')
